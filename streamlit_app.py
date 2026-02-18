@@ -101,9 +101,8 @@ with col3:
     like_col1, like_col2 = st.columns([1, 1])
     with like_col2:
         if st.button("❤️ Like"):
-            st.session_state.likes += 1
-            st.rerun()
-        st.caption(f"Likes: {st.session_state.likes}")
+            st.text("Thanks 😊 ")
+            
 
 footer="""<style>
 
@@ -122,7 +121,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-  <p style="color: #000000; font-weight: bold;">Develop with <span style='color:red;'> ❤ </span> CodeWithSky </p>
+  <p style="color: #ffffff; font-weight: bold;">Develop with <span style='color:red;'> ❤ </span> CodeWithSky </p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
