@@ -68,5 +68,25 @@ page_bg_img = f"""
 # Inject CSS
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.markdown("<span style='font-weight:bold;'>Developed with ❤️ CodeWithSky</span>", unsafe_allow_html=True)
+footer="""<style>
+
+a:hover,  a:active {
+color: red;
+background-color: transparent;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+</style>
+<div class="footer">
+  <p style="color: #000000; font-weight: bold;">Develop with <span style='color:red;'> ❤ </span> CodeWithSky </p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
 
