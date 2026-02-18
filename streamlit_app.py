@@ -6,7 +6,7 @@ import io, base64
 
 st.set_page_config(page_title="QR Generator", layout="centered")
 
-st.title("QR Code Generator")
+st.title("QR Generator")
 
 # Main inputs
 url = st.text_input("Enter URL to encode", value="https://www.youtube.com/@CodeWithSky-w2m")
