@@ -6,6 +6,10 @@ import io, base64
 
 st.set_page_config(page_title="QR Code Generator", layout="centered")
 
+# Initialize session state for likes
+if "likes" not in st.session_state:
+    st.session_state.likes = 0
+
 st.title("QR Code Generator")
 
 # Main inputs
@@ -64,6 +68,62 @@ page_bg_img = f"""
 }}
 </style>
 """
-
-# Inject CSS
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# Like button at bottom right with custom styling
+st.markdown("""
+<style>
+.like-section {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: white;
+    border-radius: 50px;
+    padding: 12px 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 999;
+}
+.like-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+</style>
+""", unsafe_allow_html=True)
+
+# Create a container for the like button at the bottom
+col1, col2, col3 = st.columns([1, 1, 1])
+with col3:
+    st.markdown("---")
+    like_col1, like_col2 = st.columns([1, 1])
+    with like_col2:
+        if st.button("❤️ Like"):
+            st.session_state.likes += 1
+            st.rerun()
+        st.caption(f"Likes: {st.session_state.likes}")
+
+footer="""<style>
+
+a:hover,  a:active {
+color: red;
+background-color: transparent;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+}
+</style>
+<div class="footer">
+  <p style="color: #000000; font-weight: bold;">Develop with <span style='color:red;'> ❤ </span> CodeWithSky </p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
+# Inject CSS
