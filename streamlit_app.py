@@ -4,7 +4,7 @@ from app import generate_qr
 from PIL import Image
 import io, base64
 
-st.set_page_config(page_title="QR Code Generator", layout="centered")
+st.set_page_config(page_title="QR Generator", layout="centered")
 
 st.title("QR Code Generator")
 
