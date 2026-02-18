@@ -85,7 +85,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-  <p style="color: #000000; font-weight: bold;">Develop with <span style='color:red;'> ❤ </span> CodeWithSky </p>
+  <p style="color: #000000; font-weight: bold;">Developed with <span style='color:red;'> ❤ </span> CodeWithSky </p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
