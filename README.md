@@ -118,4 +118,4 @@ This project is free to use and modify.
 
 ## Author
 
-Created with ❤️ from CodeWithSky
+Created with ❤️ from CodeWithSKy
