@@ -3,7 +3,7 @@
 A simple and intuitive QR code generator built with Python. Generate QR codes from URLs and customize them with different box sizes, borders, and colors.
 
 ### Demo
-👉 [View My Streamlit Deployed App]([https://your-streamlit-app-url-here](https://qr-generator-codewithsky.streamlit.app/))
+👉 [View My Streamlit Deployed App](https://qr-generator-codewithsky.streamlit.app/)
 
 
 ## Features
