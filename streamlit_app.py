@@ -10,7 +10,7 @@ st.set_page_config(page_title="QR Code Generator", layout="centered")
 if "likes" not in st.session_state:
     st.session_state.likes = 0
 
-st.title("QR Code Generator")
+st.title("QR Generator")
 
 # Main inputs
 url = st.text_input("Enter URL to encode", value="https://www.youtube.com/@CodeWithSky-w2m")
