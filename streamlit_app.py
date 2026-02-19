@@ -13,7 +13,7 @@ if "likes" not in st.session_state:
 st.title("QR Generator")
 
 # Main inputs
-url = st.text_input("Enter URL to encode", value="https://www.youtube.com/@CodeWithSky-w2m")
+url = st.text_input("Enter URL to encode", value="https://www.youtube.com/@CodeWithSky14")
 qr_title = st.text_input("Enter QR Title", value="CodeWithSky YouTube Channel")
 
 # Sidebar settings (moved here)
